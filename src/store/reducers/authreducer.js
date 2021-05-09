@@ -13,6 +13,8 @@ const authReducer = (state = INIT_STATE, action, curState) => {
                 ...state,
                 loggedin: true,
             };
+        default:
+            return state;
     }
 };
 
