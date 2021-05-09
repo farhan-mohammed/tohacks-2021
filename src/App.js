@@ -8,8 +8,12 @@ export default class App extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/">Hello</Route>
-                    <Route exact path="/login"><LogInWindow /></Route>
+                    <Route exact path="/login">
+                        <LogInWindow />
+                    </Route>
+                    <Route path="/">
+                        <button class="ui primary button">Save</button>
+                    </Route>
                 </Switch>
             </Router>
         );
