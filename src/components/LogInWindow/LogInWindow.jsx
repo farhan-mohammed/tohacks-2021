@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './LogInWindow.module.scss';
 import cx from 'classnames';
+import { connect } from "react-redux";
+import { clearError, signIn } from "../../store/actions/authactions";
 import axios from 'axios';
 
 function LogInWindow() {
@@ -32,7 +34,7 @@ function LogInWindow() {
                                 // }
 
                                 // Unsuccessful credentials: show error caption & reset password field
-                                // setPassInput("");
+                                setPassInput("");
                             }}>
                                 Log In
                             </button>
@@ -49,4 +51,19 @@ function LogInWindow() {
     )
 }
 
-export default LogInWindow;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        login: (creds) => dispatch(signIn(creds)),
+        clearError: () => dispatch(clearError()),
+    };
+};
+const mapStateToProps = (state) => {
+    console.log(state);
+    return {
+        loggedin: state.auth.loggedin,
+        error: state.auth.error,
+        // lang: state.lang.lang,
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LogInWindow);

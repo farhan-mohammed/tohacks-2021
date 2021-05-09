@@ -1,0 +1,41 @@
+.sidebarSeparator {
+    padding-bottom: 200px;
+    border-bottom-color: #333;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.dashboardContainer {
+    padding: 200px 200px;
+    
+}
+
+.dashboardWrapper {
+    background-color: #fafafa;
+}
+
+.buildBox {
+    height: 600px;
+    width: 620px;
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+}
+
+.buildComponent {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+
+    img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+.buildComponentImage {
+    display: inline-block;
+}
