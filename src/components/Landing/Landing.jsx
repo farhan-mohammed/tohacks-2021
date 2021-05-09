@@ -9,24 +9,12 @@ export default class Landing extends Component {
                     <div className="lan-heading__title">Eventable</div>
                     <div className="lan-heading__button-con">
                         <div className="lan-heading__button">
-                            <Link
-                                to="/login"
-                                className="ui  basic button"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                }}
-                            >
+                            <Link to="/login" className="ui  basic button">
                                 Login
                             </Link>
                         </div>
                         <div className="lan-heading__button">
-                            <Link
-                                to="/signup"
-                                className="ui primary button"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                }}
-                            >
+                            <Link to="/signup" className="ui primary button">
                                 Register
                             </Link>
                         </div>

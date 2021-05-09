@@ -8,82 +8,82 @@ $black: black;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .icon {
-    font-family: "Rum Raisin";
+}
+.icon {
+    font-family: 'Rum Raisin';
     font-size: 50px;
     font-weight: 400;
     line-height: normal;
     color: $white;
     margin-bottom: 17px;
     margin-left: 70px;
-  }
-  .flexWrapperSix {
+}
+.flexWrapperSix {
     background-color: rgba(239, 217, 206, 1);
     margin-left: 69px;
     border-radius: 25px;
     display: flex;
     align-items: flex-start;
-  }
-  .flexWrapperTwelve {
+}
+.flexWrapperTwelve {
     padding: 54px 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .relativeWrapperSeven {
+}
+.relativeWrapperSeven {
     margin-bottom: 93.57px;
     margin-left: 40px;
     position: relative;
-  }
-  .roomSprite {
+}
+.roomSprite {
     padding: 12.88px 0.06px 38.52px 74.47px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-  }
-  .flexWrapperFourteen {
+}
+.flexWrapperFourteen {
     margin-bottom: 54.36px;
     padding: 0 0 0 196.48px;
     display: flex;
     align-items: flex-start;
-  }
-  .vector {
+}
+.vector {
     margin-right: 90.31px;
-  }
-  .relativeWrapperThree {
+}
+.relativeWrapperThree {
     margin-top: 9.89px;
     position: relative;
-  }
-  .vectorTwo {
+}
+.vectorTwo {
     position: absolute;
     right: 37.16px;
     top: -16.26px;
-  }
-  .nut {
+}
+.nut {
     position: absolute;
     right: 36.5px;
     top: -22.77px;
-  }
-  .flexWrapperFive {
+}
+.flexWrapperFive {
     background-size: 100% 100%;
-    background-image: url("https://static.overlay-tech.com/assets/987fb83b-7a5f-4b47-ab05-15f57ffd283c.svg");
+    background-image: url('https://static.overlay-tech.com/assets/987fb83b-7a5f-4b47-ab05-15f57ffd283c.svg');
     padding: 11.09px 14.19px 11.01px;
     position: relative;
-  }
-  .vectorThree {
+}
+.vectorThree {
     position: relative;
-  }
-  .appleImage {
+}
+.appleImage {
     position: absolute;
     left: 32.52px;
     top: 16.43px;
-  }
-  .relativeWrapperTwo {
+}
+.relativeWrapperTwo {
     position: relative;
-  }
-  .plantSprite {
+}
+.plantSprite {
     padding: 88.02px 0 0 44.74px;
     display: flex;
     flex-direction: column;
@@ -91,160 +91,160 @@ $black: black;
     position: absolute;
     left: -74.47px;
     top: -109.53px;
-  }
-  .relativeWrapperOne {
+}
+.relativeWrapperOne {
     margin-bottom: 98.3px;
     margin-left: 31.74px;
     position: relative;
-  }
-  .potSprite {
+}
+.potSprite {
     padding: 6.45px 0.08px 0 0.09px;
     display: flex;
     align-items: flex-start;
     position: absolute;
     left: -55.4px;
     bottom: -94.26px;
-  }
-  .flexWrapperOne {
+}
+.flexWrapperOne {
     background-size: 100% 100%;
-    background-image: url("https://static.overlay-tech.com/assets/7e265fec-6924-4094-b639-b93df3ef827f.svg");
+    background-image: url('https://static.overlay-tech.com/assets/7e265fec-6924-4094-b639-b93df3ef827f.svg');
     padding: 0.86px 8.6px 1.03px;
     display: flex;
     align-items: center;
     position: absolute;
     left: 0;
     top: 0;
-  }
-  .flexWrapperTwo {
+}
+.flexWrapperTwo {
     background-size: 100% 100%;
-    background-image: url("https://static.overlay-tech.com/assets/143997d8-e6e6-4b99-86f8-a2f8e908deaa.svg");
+    background-image: url('https://static.overlay-tech.com/assets/143997d8-e6e6-4b99-86f8-a2f8e908deaa.svg');
     padding: 22.28px 3.01px 21.43px 1.89px;
     position: relative;
-  }
-  .vectorFour {
+}
+.vectorFour {
     position: absolute;
     left: -76.48px;
     top: -1.58px;
-  }
-  .vectorFive {
+}
+.vectorFive {
     position: absolute;
     left: -34.27px;
     top: -88.02px;
-  }
-  .vectorSix {
+}
+.vectorSix {
     position: absolute;
     left: 187.31px;
     bottom: -38.51px;
-  }
-  .flexWrapperThree {
+}
+.flexWrapperThree {
     padding: 0 0 25.7px;
     display: flex;
     align-items: flex-start;
     position: absolute;
     left: 153.11px;
     top: -104.16px;
-  }
-  .vectorSeven {
+}
+.vectorSeven {
     position: absolute;
     left: 16.1px;
     top: 0.17px;
     z-index: 10;
-  }
-  .vectorEight {
+}
+.vectorEight {
     position: absolute;
     left: 17.22px;
     top: 6.28px;
-  }
-  .vectorNine {
+}
+.vectorNine {
     position: absolute;
     left: 17.22px;
     top: 0.95px;
-  }
-  .vectorTen {
+}
+.vectorTen {
     position: absolute;
     left: 17.39px;
     top: 50.49px;
-  }
-  .vectorEleven {
+}
+.vectorEleven {
     position: absolute;
     left: 46.9px;
     top: 83.86px;
-  }
-  .vectorTwelve {
+}
+.vectorTwelve {
     position: absolute;
     left: 46.9px;
     top: 76.38px;
-  }
-  .vectorThirteen {
+}
+.vectorThirteen {
     position: absolute;
     left: 92.83px;
     top: 50.49px;
-  }
-  .flexWrapperFour {
+}
+.flexWrapperFour {
     padding: 9.89px 0 0;
     position: relative;
-  }
-  .vectorFourteen {
+}
+.vectorFourteen {
     position: absolute;
     right: 61.81px;
     top: 173.17px;
-  }
-  .vectorFifteen {
+}
+.vectorFifteen {
     position: absolute;
     left: 208.34px;
     top: 265.39px;
-  }
-  .vectorSixteen {
+}
+.vectorSixteen {
     position: absolute;
     left: 77.52px;
     top: 113.35px;
-  }
-  .vectorSeventeen {
+}
+.vectorSeventeen {
     position: absolute;
     left: 189.85px;
     top: 113.99px;
-  }
-  .vectorEighteen {
+}
+.vectorEighteen {
     position: absolute;
     left: 119.86px;
     top: 37.97px;
-  }
-  .vectorNineteen {
+}
+.vectorNineteen {
     position: absolute;
     left: 247.44px;
     top: 39.6px;
-  }
-  .vectorTwenty {
+}
+.vectorTwenty {
     position: absolute;
     left: 211.07px;
     top: 137.24px;
-  }
-  .vectorTwentyOne {
+}
+.vectorTwentyOne {
     position: absolute;
     left: 134.66px;
     top: 0;
-  }
-  .vectorTwentyTwo {
+}
+.vectorTwentyTwo {
     position: absolute;
     left: 158.55px;
     top: 38.36px;
-  }
-  .vectorTwentyThree {
+}
+.vectorTwentyThree {
     position: absolute;
     left: 252.3px;
     top: 39.22px;
-  }
-  .vectorTwentyFour {
+}
+.vectorTwentyFour {
     position: absolute;
     left: 133.63px;
     top: 55.14px;
-  }
-  .vectorTwentyFive {
+}
+.vectorTwentyFive {
     position: absolute;
     left: 201.35px;
     top: 87.99px;
-  }
-  .flexWrapperSeven {
+}
+.flexWrapperSeven {
     background-color: $cadet-blue;
     border-radius: 50%;
     padding: 53px 29px 57.74px 18px;
@@ -254,34 +254,34 @@ $black: black;
     right: -49px;
     bottom: -86.57px;
     border: 5px solid rgba(31, 72, 126, 1);
-  }
-  .label3 {
+}
+.label3 {
     height: 114px;
     width: 614px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 35px;
     font-weight: 700;
     line-height: normal;
     color: $black;
     display: flex;
     text-align: center;
-  }
-  .flexWrapperEight {
+}
+.flexWrapperEight {
     background-color: $white;
     border-radius: 25px;
     padding: 88px 33px 150px 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .relativeWrapperFour {
+}
+.relativeWrapperFour {
     margin-bottom: 83px;
     position: relative;
-  }
-  .label4 {
+}
+.label4 {
     height: 100px;
     width: 524px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 65px;
     font-weight: 800;
     line-height: normal;
@@ -290,37 +290,31 @@ $black: black;
     position: relative;
     margin-left: 32px;
     display: none;
-  }
-  .alreadyHaveAnAccountLogIn {
-    height: 37px;
-    width: 524px;
-    display: flex;
-    position: absolute;
-    left: 66px;
-    bottom: -28px;
-    font-family: "Raleway";
+}
+.alreadyHaveAnAccountLogIn {
+    font-family: 'Raleway';
     font-size: 25px;
     font-weight: 400;
     line-height: normal;
     color: $black;
-  }
-  .alreadyHaveAnAccountLogInEmphasis1 {
-    font-family: "Raleway";
+}
+.alreadyHaveAnAccountLogInEmphasis1 {
+    font-family: 'Raleway';
     font-size: 25px;
     font-weight: 700;
     line-height: normal;
     color: rgba(31, 72, 126, 1);
     margin-left: 10px;
-  }
-  .relativeWrapperFive {
+}
+.relativeWrapperFive {
     margin-bottom: 52px;
     margin-left: 9px;
     position: relative;
-  }
-  .label5 {
+}
+.label5 {
     height: 37px;
     width: 524px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 23px;
     font-weight: 400;
     line-height: normal;
@@ -329,23 +323,23 @@ $black: black;
     position: absolute;
     right: 13px;
     top: -32px;
-  }
-  .flexWrapperNine {
+}
+.flexWrapperNine {
     background-color: rgba(196, 196, 196, 0);
     border-radius: 15px;
     padding: 3px 0px 3px 9px;
     position: relative;
     border: 3px solid rgba(31, 72, 126, 1);
-  }
-  .relativeWrapperSix {
+}
+.relativeWrapperSix {
     margin-bottom: 13px;
     margin-left: 9px;
     position: relative;
-  }
-  .label6 {
+}
+.label6 {
     height: 37px;
     width: 524px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 23px;
     font-weight: 400;
     line-height: normal;
@@ -354,46 +348,46 @@ $black: black;
     position: absolute;
     right: 11px;
     top: -30px;
-  }
-  .flexWrapperTen {
+}
+.flexWrapperTen {
     background-color: rgba(196, 196, 196, 0);
     border-radius: 15px;
     padding: 3px 0px 3px 9px;
     position: relative;
     border: 3px solid rgba(31, 72, 126, 1);
-  }
-  .flexWrapperThirteen {
+}
+.flexWrapperThirteen {
     margin-bottom: 45px;
     padding: 0 0 0 22px;
     display: flex;
     align-items: flex-start;
-  }
-  .termsCheckbox {
+}
+.termsCheckbox {
     width: 20px;
     height: 20px;
     background-color: rgba(196, 196, 196, 0);
     margin-right: 7px;
     border: 2px solid rgba(31, 72, 126, 1);
-  }
-  .iAgreeToEventablesTermsOfService {
+}
+.iAgreeToEventablesTermsOfService {
     height: 37px;
     width: 524px;
     display: flex;
     margin-top: 1px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
     color: rgba(31, 72, 126, 1);
-  }
-  .iAgreeToEventablesTermsOfServiceEmphasis0 {
-    font-family: "Raleway";
+}
+.iAgreeToEventablesTermsOfServiceEmphasis0 {
+    font-family: 'Raleway';
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
     color: $black;
-  }
-  .flexWrapperEleven {
+}
+.flexWrapperEleven {
     background-color: rgba(31, 72, 126, 1);
     margin-left: 9px;
     border-radius: 15px;
@@ -402,11 +396,11 @@ $black: black;
     align-items: flex-start;
     border: 3px solid rgba(31, 72, 126, 1);
     cursor: pointer;
-  }
-  .registrationButton {
+}
+.registrationButton {
     height: 37px;
     width: 524px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 25px;
     font-weight: 700;
     line-height: normal;
@@ -415,18 +409,18 @@ $black: black;
     align-items: center;
     text-align: center;
     padding-left: 215px;
-  }
+}
 
-  .underlineable:hover {
+.underlineable:hover {
     text-decoration: underline;
     cursor: pointer;
-  }
+}
 
-  .formInputHard {
-    width: 479px !important;
+.formInputHard {
+    width: 100%;
     height: 66px;
     border: none !important;
     color: #7f7f7f !important;
     font-size: 22px !important;
     padding-left: 14px !important;
-  }
+}
