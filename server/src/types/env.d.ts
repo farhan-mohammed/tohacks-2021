@@ -7,5 +7,8 @@ declare namespace NodeJS {
     CRDB_DB: string;
     CRDB_PORT: string;
     CRDB_HOST: string;
+    ASTRA_CLIENT_ID: string;
+    ASTRA_CLIENT_SECRET: string;
+    ASTRA_DB_APPLICATION_TOKEN: string;
   }
 }

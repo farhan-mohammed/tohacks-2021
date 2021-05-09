@@ -3,10 +3,10 @@ import { getEventsCRDB, getEventsDataStax } from "../controllers/event";
 
 const router = express.Router();
 
-// Takes query param id=n (which is the event id), postgres example
+// Returns all unique event in CRDB sample
 router.get("/crdb", getEventsCRDB);
 
-// Take query param id=n (which is the event id), cassandra example
+// Returns all unique event in dataStax sample
 router.get("/datastax", getEventsDataStax);
 
 export default router;
