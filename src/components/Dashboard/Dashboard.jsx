@@ -19,9 +19,9 @@ function Dashboard() {
     return (
         <div className={styles.dashboardWrapper}>
             <div className="ui vertical inverted sidebar menu left uncover visible" id="toc">
-                <div className="item">
+                <div className="item" style={{textAlign: 'center'}}>
                     <a href="/">
-                        <b>Eventable</b>
+                        <b className={styles.eventableIcon}>Eventable</b>
                     </a>
                 </div>
                 <div className={styles.sidebarSeparator} />
