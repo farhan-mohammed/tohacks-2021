@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import { TextField } from '@material-ui/core';
 import styles from './LogInWindow.module.scss';
+import cx from 'classnames';
 import axios from 'axios';
 
 function LogInWindow() {
@@ -12,15 +13,17 @@ function LogInWindow() {
         <div id="master" className={styles.logInWrap}>
             <div className={styles.logInBox}>
                 <div className={styles.formWrapper}>
-                    <Form>
-                        <TextField id="formInputEmail" className={styles.formInput} label="Email" type="text" variant="outlined" size="small" required value={emailInput}
-                          InputLabelProps={{ shrink: true }} onChange={(evt) => setEmailInput(evt.target.value)} />
+                    <form class="ui fluid form">
+                        <div class="field">
+                            <input type="text" placeholder="Email" required value={emailInput} onChange={(evt) => setEmailInput(evt.target.value)} />
+                        </div>
                         <div className={styles.formInputSeparator} />
-                        <TextField id="formInputPassword" className={styles.formInput} label="Password" type="password" variant="outlined" size="small" required value={passInput}
-                          InputLabelProps={{ shrink: true }} onChange={(evt) => setPassInput(evt.target.value)} />
+                        <div class="field">
+                            <input type="text" placeholder="Password" required value={passInput} onChange={(evt) => setPassInput(evt.target.value)} />
+                        </div>
                         <div className={styles.formInputSeparator} />
                         <div className={styles.logInContainer}>
-                            <Button id="loginButton" variant="primary" type="submit" className={styles.logInButton} onClick={async () => {
+                            <button id="loginButton" type="submit" className={cx("ui primary button", styles.logInButton)} onClick={async () => {
                                 
                                 // Use identifier (i.e. username / email) to get account in database
                                 // let inMemoryToken = false;
@@ -34,9 +37,9 @@ function LogInWindow() {
                                 setPassInput("");
                             }}>
                                 Log In
-                            </Button>
+                            </button>
                         </div>
-                    </Form>
+                    </form>
                 </div>
             </div>
         </div>

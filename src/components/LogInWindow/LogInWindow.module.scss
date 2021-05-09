@@ -57,7 +57,7 @@ input[type=checkbox] {
 .formWrapper {
     padding: 5%;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .formInputSeparator {
@@ -85,13 +85,9 @@ input[type=checkbox] {
 }
 
 .logInButton {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
     width: 200px;
-    height: 40px;
+    height: 35px;
+    margin: auto !important;
 }
 
 .errorMessage {
@@ -100,4 +96,8 @@ input[type=checkbox] {
     text-align: center;
     margin: 0 auto;
     color: #dd0000;
+}
+
+form input {
+    border: 1px solid rgba(34,36,38,.3) !important;
 }
