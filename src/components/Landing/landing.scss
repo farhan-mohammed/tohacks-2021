@@ -1,0 +1,105 @@
+.lan {
+    &-heading {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        padding: 40px 15px;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+            width: 750px;
+        }
+        @media (min-width: 992px) {
+            width: 970px;
+        }
+        @media (min-width: 1200px) {
+            width: 1170px;
+        }
+        width: 100vw;
+        &__title {
+            font-family: Rum Raisin;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 65px;
+        }
+        &__button {
+            &-con {
+                display: flex;
+            }
+            & > * {
+                box-sizing: border-box;
+                border-radius: 50px !important;
+                background-color: #e5e5e5;
+                text-transform: uppercase !important;
+                letter-spacing: 1px !important;
+                font-family: Raleway !important;
+                font-weight: 400 !important;
+
+                &:first-child {
+                    border: 3px solid #6bb3a0 !important;
+                    margin-right: 30px;
+                }
+                &:last-child {
+                    background-color: #6bb4a0 !important;
+                }
+            }
+        }
+    }
+    &-body {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        position: relative;
+        padding: 80px 15px 30px;
+
+        @media (min-width: 768px) {
+            width: 750px;
+        }
+        @media (min-width: 992px) {
+            width: 970px;
+        }
+        @media (min-width: 1200px) {
+            width: 1170px;
+        }
+        &__mailbox {
+            width: 600px;
+            position: absolute;
+            right: -250px;
+            bottom: 60px;
+            & > img {
+                width: inherit;
+            }
+        }
+        &__big {
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 110px;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+        &__heading {
+            font-family: Raleway;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 1.1;
+        }
+        &__bodytext {
+            font-family: Raleway;
+            margin-top: 10px;
+            max-width: 800px;
+            font-size: 30px;
+            font-weight: 100;
+            line-height: 1.1;
+        }
+    }
+}
+.body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff9f5;
+}
