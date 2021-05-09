@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import styles from './LogInWindow.module.scss';
+import styles from './SignUpWindow.module.scss';
 import cx from 'classnames';
 import axios from 'axios';
 
-function LogInWindow() {
+function SignUpWindow() {
     const [emailInput, setEmailInput] = useState("");
     const [passInput, setPassInput] = useState("");
+    const [passConfInput, setPassConfInput] = useState("");
 
     return (
-        <div id="master" className={styles.logInWrap}>
-            <div className={styles.logInBox}>
+        <div id="master" className={styles.signUpWrap}>
+            <div className={styles.signUpBox}>
                 <div className={styles.formWrapper}>
                     <form class="ui fluid form">
                         <div class="field">
@@ -20,8 +21,12 @@ function LogInWindow() {
                             <input type="password" placeholder="Password" required value={passInput} onChange={(evt) => setPassInput(evt.target.value)} />
                         </div>
                         <div className={styles.formInputSeparator} />
-                        <div className={styles.logInContainer}>
-                            <button id="loginButton" type="submit" className={cx("ui primary button", styles.logInButton)} onClick={async () => {
+                        <div class="field">
+                            <input type="password" placeholder="Confirm Password" required value={passConfInput} onChange={(evt) => setPassConfInput(evt.target.value)} />
+                        </div>
+                        <div className={styles.formInputSeparator} />
+                        <div className={styles.signUpContainer}>
+                            <button id="signupButton" type="submit" className={cx("ui primary button", styles.signUpButton)} onClick={async () => {
                                 
                                 // Use identifier (i.e. username / email) to get account in database
                                 // let inMemoryToken = false;
@@ -32,9 +37,12 @@ function LogInWindow() {
                                 // }
 
                                 // Unsuccessful credentials: show error caption & reset password field
-                                setPassInput("");
+                                if (passInput == passConfInput) {
+                                    setPassInput("");
+                                    setPassConfInput("");
+                                }
                             }}>
-                                Log In
+                                Sign Up
                             </button>
                         </div>
                     </form>
@@ -44,4 +52,4 @@ function LogInWindow() {
     )
 }
 
-export default LogInWindow;
+export default SignUpWindow;
