@@ -7,44 +7,83 @@ import axios from 'axios';
 
 function LogInWindow() {
     const [emailInput, setEmailInput] = useState("");
-    const [passInput, setPassInput] = useState("");
+    const [password, setPassword] = useState("");
 
     return (
-        <div id="master" className={styles.logInWrap}>
-            <div className={styles.logInBox}>
-                <div className={styles.formWrapper}>
-                    <form class="ui fluid form">
-                        <div class="field">
-                            <input type="text" placeholder="Email" required value={emailInput} onChange={(evt) => setEmailInput(evt.target.value)} />
-                        </div>
-                        <div className={styles.formInputSeparator} />
-                        <div class="field">
-                            <input type="password" placeholder="Password" required value={passInput} onChange={(evt) => setPassInput(evt.target.value)} />
-                        </div>
-                        <div className={styles.formInputSeparator} />
-                        <div className={styles.logInContainer}>
-                            <button id="loginButton" type="submit" className={cx("ui primary button", styles.logInButton)} onClick={async () => {
-                                
-                                // Use identifier (i.e. username / email) to get account in database
-                                // let inMemoryToken = false;
-                                // let accountObject = await getAccountObj(identInput);
-                                // if (accountObject !== undefined) {
-                                    // Account is found in database; then, check if credentials match
-                                    // inMemoryToken = await getSessionPerm(accountObject.email, passInput);
-                                // }
-
-                                // Unsuccessful credentials: show error caption & reset password field
-                                setPassInput("");
-                            }}>
-                                Log In
-                            </button>
-                        </div>
-                        <div className={styles.signupBlurb}>
-                            <a href="/signup">
-                                Sign Up
-                            </a>
-                        </div>
-                    </form>
+        <div className={styles.signUpPage}>
+            <p className={styles.icon}><a href="/" style={{color: 'white'}}>Eventable</a></p>
+            <div className={styles.flexWrapperSix}>
+                <div className={styles.flexWrapperEight}>
+                <div className={styles.relativeWrapperFour}>
+                    <p className={styles.label4}>
+                    Let’s get started
+                    </p>
+                    <p className={styles.alreadyHaveAnAccountLogIn}>
+                    Don't have an account yet?{" "}
+                    <strong
+                        className={
+                        styles.alreadyHaveAnAccountLogInEmphasis1
+                        }
+                    >
+                        <a href="/signup">
+                            Sign up
+                        </a>
+                    </strong>
+                    </p>
+                </div>
+                <div className={styles.relativeWrapperFive}>
+                    <p className={styles.label5}>Email Address</p>
+                    <div className={styles.flexWrapperNine}>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="https://static.overlay-tech.com/assets/79e89418-0c59-4b27-9a0d-ff9373a5f46c.png"
+                                    />
+                                </td>
+                                <td>
+                                    <form class="ui fluid form">
+                                        <div class="field">
+                                            <input type="text" className={styles.formInputHard} required value={emailInput} onChange={(evt) => setEmailInput(evt.target.value)} />
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div className={styles.relativeWrapperSix}>
+                    <p className={styles.label6}>Password</p>
+                    <div className={styles.flexWrapperTen}>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="https://static.overlay-tech.com/assets/82ad5a9e-815b-49b7-a2f8-0a456f472a9e.png"
+                                    />
+                                </td>
+                                <td>
+                                    <form class="ui fluid form">
+                                        <div class="field">
+                                            <input type="password" className={styles.formInputHard} required value={password} onChange={(evt) => setPassword(evt.target.value)} />
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div className={styles.flexWrapperThirteen} />
+                <button type="submit" className={styles.flexWrapperEleven} onClick={async () => {
+                    // Put something here
+                    setPassword("");
+                }}>
+                    <p className={styles.registrationButton}>
+                        LOG IN
+                    </p>
+                </button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Dashboard, LogInWindow, SignUpWindow } from "./components";
+import { Dashboard, Landing, LogInWindow, SignUpWindow } from "./components";
 // import { ProtectedRoute } from "./routes/ProtectedRoute";
 // import ViewReports from "./pages/dashboard/ViewReports";
 
@@ -19,7 +19,7 @@ export default class App extends Component {
                         <Dashboard />
                     </Route>
                     <Route path="/">
-                        <button class="ui primary button">Save</button>
+                        <Landing />
                     </Route>
                 </Switch>
             </Router>
