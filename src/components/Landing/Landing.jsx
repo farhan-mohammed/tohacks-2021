@@ -1,67 +1,56 @@
-import React, { useState, useEffect } from 'react';
-import styles from './Landing.module.scss';
-import cx from 'classnames';
-import axios from 'axios';
-
-function Landing() {
-
-    return (
-        <div className={styles.landingPage}>
-            <div className={styles.flexWrapperFour}>
-            <p className={styles.icon}>Eventable</p>
-            <div className={styles.flexWrapperThree}>
-                <a href="/login">
-                    <p className={styles.loginButton}>LOG IN</p>
-                </a>
-            </div>
-            <div className={styles.flexWrapperTwo}>
-                <a href="/signup">
-                    <p className={styles.signupButton}>SIGN UP</p>
-                </a>
-            </div>
-            </div>
-            <div className={styles.relativeWrapperOne}>
-                <img
-                    alt=""
-                    className={
-                    styles.openedMailboxWithLetterByOblikStud
-                    }
-                    src="https://static.overlay-tech.com/assets/eea6f51a-6269-4f8c-b39d-fb38130d7c56.svg"
-                />
-                <p className={styles.label1}>
-                    Welcome to Eventable
-                </p>
-                {/* <p
-                    className={
-                    styles.shortDescriptionBlurbLoremIpsumDol
-                    }
-                >
-                    <strong
-                    className={
-                        styles.shortDescriptionBlurbLoremIpsumDolEmphasis0
-                    }
-                    >
-                    short description blurb:
-                    </strong>{" "}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Sed faucibus nunc in erat consectetur
-                        rhoncus. Pellentesque dapibus ligula eu justo
-                        fringilla, id fermentum purus pretium. Vestibulum
-                        ante ipsum primis in faucibus orci luctus.
-                </p> */}
-                <div className={styles.relativeWrapperOne}>
-                    <p className={styles.fromHackathonToHacker}>
-                        FROM: HACKATHON
-                    <br />
-                        TO: HACKER
-                    </p>
-                    <p className={styles.label2}>
-                        Made Quick &amp; Easy, Just For You!
-                    </p>
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './landing.scss';
+export default class Landing extends Component {
+    render() {
+        return (
+            <div className="body">
+                <div className="lan-heading">
+                    <div className="lan-heading__title">Eventable</div>
+                    <div className="lan-heading__button-con">
+                        <div className="lan-heading__button">
+                            <Link
+                                to="/login"
+                                className="ui  basic button"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                }}
+                            >
+                                Login
+                            </Link>
+                        </div>
+                        <div className="lan-heading__button">
+                            <Link
+                                to="/signup"
+                                className="ui primary button"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                }}
+                            >
+                                Register
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="lan-body">
+                    <div className="lan-body__heading">Welcome to Eventable</div>
+                    <div className="lan-body__big">From: Organizers</div>
+                    <div className="lan-body__big">To: Attendees</div>
+                    <div className="lan-body__heading">Made Quick & Easy, Just for you!</div>
+                    <div className="lan-body__bodytext">
+                        Eventable is a platform/libraries that organizers can use to mass mail
+                        attendees more information such as schedule, workshops and speaker
+                        information so that attendees have a physical copy of a what they want to
+                        make.
+                    </div>
+                    <div className="lan-body__mailbox">
+                        <img
+                            alt="mailbox"
+                            src="https://static.overlay-tech.com/assets/eea6f51a-6269-4f8c-b39d-fb38130d7c56.svg"
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        );
+    }
 }
-
-export default Landing;
