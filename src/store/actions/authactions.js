@@ -7,7 +7,7 @@ export const signIn = (credentials) => {
             .then((info) => {
                 dispatch({
                     type: "LOGIN_SUCCESS",
-                    payload: { uid: info.user.uid, userData: data },
+                    payload: { uid: info.user.uid },
                 });
             })
             .catch((err) => {
