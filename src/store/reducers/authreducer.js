@@ -3,13 +3,12 @@ const INIT_STATE = {
 };
 const authReducer = (state = INIT_STATE, action, curState) => {
     switch (action.type) {
-        case 'LOGIN_ERROR':
-            alert(action.error);
+        case "LOGIN_ERROR":
             return {
                 ...state,
                 loggedin: false,
             };
-        case 'LOGIN_SUCCESS':
+        case "LOGIN_SUCCESS":
             return {
                 ...state,
                 loggedin: true,
