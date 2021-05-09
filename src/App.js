@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { LogInWindow, SignUpWindow } from "./components";
+import { Dashboard, LogInWindow, SignUpWindow } from "./components";
+// import { ProtectedRoute } from "./routes/ProtectedRoute";
 // import ViewReports from "./pages/dashboard/ViewReports";
 
 export default class App extends Component {
@@ -13,6 +14,9 @@ export default class App extends Component {
                     </Route>
                     <Route exact path="/signup">
                         <SignUpWindow />
+                    </Route>
+                    <Route exact path="/dashboard">
+                        <Dashboard />
                     </Route>
                     <Route path="/">
                         <button class="ui primary button">Save</button>

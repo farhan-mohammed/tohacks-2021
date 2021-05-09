@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styles from './SignUpWindow.module.scss';
 import cx from 'classnames';
+import { connect } from "react-redux";
+import { clearError, register } from "../../store/actions/authactions";
 import axios from 'axios';
 
 function SignUpWindow() {
@@ -57,4 +59,16 @@ function SignUpWindow() {
     )
 }
 
-export default SignUpWindow;
+const mapStateToProps = (state) => ({
+    error: state.auth.error,
+    registerredirect: state.auth.registerredirect,
+    // lang: state.lang.lang,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    register: ({ email, username, password, name, scq, sca }) =>
+        dispatch(register({ email, username, password, name, scq, sca })),
+    clearError: () => dispatch(clearError()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignUpWindow);

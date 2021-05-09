@@ -50,3 +50,7 @@ export const register = ({ email, password, name, username, scq, sca }) => {
             });
     };
 };
+
+export const clearError = () => {
+    return { type: "CLEAR_ERROR" };
+};
