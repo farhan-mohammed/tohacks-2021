@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Eventable
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://i.imgur.com/ia3jsZz.png" />
+</p>
 
-## Available Scripts
+## 💡 Inspiration
 
-In the project directory, you can run:
+Make your events feel real with Eventable! Since nearly all the events that we participate in are remote, not by choice but a necessity, Eventable adds helps you add a touch of realism to your event. Wouldn't it be cool if we can easily make these events more personalized and real by shipping out physical real pamphlets and letters? Eventable lets you create and modify a document that you can mail to your attendees all around the world!
 
-### `npm start`
+## 🔎 What it does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Eventable uses your user database may have a many-to-many relationship with events to send customized letters through our clean and intuitive platform. When you sign in to our platform, you have the option to link your database regardless it be CockroachDB, Datastax Astra, Firebase, and etc. Immediately after, you may start creating a customized PDF letter through our client using an easy-to-use drag and drop workflow. After creating your package for the event, you simply click **send** and we will use LOB API to take care of the package!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🔧 How we built it
 
-### `npm test`
+- **Frontend**: React, Redux, Sass, Semantic UI, react-beautiful-dnd
+- **Backend/Cloud**: Firebase, Express, Node.js, PostgreSQL, Cassandra, CockroachDB, Datastax Astra
+- **External APIs**: LOB API for mailing and delivery request
+- **Design and UI**: Figma, Overlay
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛑 Challenges we ran into
 
-### `npm run build`
+- Determining the scope of our library/platform
+- Learning Firebase and applying it using Redux
+- Merge conflicts with Git version control and lag with peer programming
+- Connecting everyone to all the DBaaS we used (CRDB and Datastax)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✅ Accomplishments that we're proud of
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Our first "library platform" built within less than 24 hours
+- Getting Cassandra to work with many-to-many relationships despite not being made for it
+- Managing all the certs from CockroachDB and Datastax Astra in an efficient manner
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📖 What we learned
 
-### `npm run eject`
+- Working on something that you know others might make use of is really exciting and exhilarating
+- Learned how to integrate several DBaaS such as CRDB and Datastax Astra
+- Learned how to have a better development experience using Figma and Overlay
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 💭 What's next for Eventable
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**REACH OUT TO ALL HACKATHON ORGANIZERS!** We want our app/library to help all the organizers out there! Integrating our library should be easy for organizers with their existing platforms. 
