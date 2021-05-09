@@ -37,13 +37,18 @@ function SignUpWindow() {
                                 // }
 
                                 // Unsuccessful credentials: show error caption & reset password field
-                                if (passInput == passConfInput) {
+                                if (passInput === passConfInput) {
                                     setPassInput("");
                                     setPassConfInput("");
                                 }
                             }}>
                                 Sign Up
                             </button>
+                        </div>
+                        <div className={styles.loginBlurb}>
+                            <a href="/login">
+                                Log in
+                            </a>
                         </div>
                     </form>
                 </div>

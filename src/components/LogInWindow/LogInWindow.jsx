@@ -32,10 +32,15 @@ function LogInWindow() {
                                 // }
 
                                 // Unsuccessful credentials: show error caption & reset password field
-                                setPassInput("");
+                                // setPassInput("");
                             }}>
                                 Log In
                             </button>
+                        </div>
+                        <div className={styles.signupBlurb}>
+                            <a href="/signup">
+                                Sign Up
+                            </a>
                         </div>
                     </form>
                 </div>

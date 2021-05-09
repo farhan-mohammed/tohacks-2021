@@ -101,3 +101,11 @@ input[type=checkbox] {
 form input {
     border: 1px solid rgba(34,36,38,.3) !important;
 }
+
+.loginBlurb {
+    margin-top: 20px;
+    a {
+        color: #777;
+        text-decoration: underline;
+    }
+}
