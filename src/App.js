@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { LogInWindow, SignUpWindow } from "./components";
 // import ViewReports from "./pages/dashboard/ViewReports";
 
 export default class App extends Component {
@@ -7,7 +8,15 @@ export default class App extends Component {
         return (
             <Router>
                 <Switch>
-                    <Route path="/">Hello</Route>
+                    <Route exact path="/login">
+                        <LogInWindow />
+                    </Route>
+                    <Route exact path="/signup">
+                        <SignUpWindow />
+                    </Route>
+                    <Route path="/">
+                        <button class="ui primary button">Save</button>
+                    </Route>
                 </Switch>
             </Router>
         );
