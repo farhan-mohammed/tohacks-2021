@@ -6,11 +6,11 @@
 
 ## 💡 Inspiration
 
-Events are hard to organize, make it easier with Eventable! Now that there are more remote events than ever, we have participants all other the world joining hackathons and events alike. Wouldn't it be cool if we can easily make these events more personalized by shipping out physical pamphlets and letters? Eventable can help you integrate automated, cheap, and easy mailing/delivery all across the world in your event platform.
+Make your events feel real with Eventable! Since nearly all the events that we participate in are remote, not by choice but a necessity, Eventable adds helps you add a touch of realism to your event. Wouldn't it be cool if we can easily make these events more personalized and real by shipping out physical real pamphlets and letters? Eventable lets you create and modify a document that you can mail to your attendees all around the world!
 
 ## 🔎 What it does
 
-Eventable uses your user database may have a many-to-many relationship with events to send customized letters through our clean and intuitive platform. When you sign in to our platform, you have the option to link your database regardless it be CockroachDB, Datastax Astra, MySQL, and etc. Immediately after, you may start creating a customized PDF letter through our client using an easy-to-use drag and drop workflow. After creating your package for the event, you simply click package -> send and we will use LOB API to take care of the package!
+Eventable uses your user database may have a many-to-many relationship with events to send customized letters through our clean and intuitive platform. When you sign in to our platform, you have the option to link your database regardless it be CockroachDB, Datastax Astra, Firebase, and etc. Immediately after, you may start creating a customized PDF letter through our client using an easy-to-use drag and drop workflow. After creating your package for the event, you simply click **send** and we will use LOB API to take care of the package!
 
 ## 🔧 How we built it
 
@@ -24,6 +24,7 @@ Eventable uses your user database may have a many-to-many relationship with even
 - Determining the scope of our library/platform
 - Learning Firebase and applying it using Redux
 - Merge conflicts with Git version control and lag with peer programming
+- Connecting everyone to all the DBaaS we used (CRDB and Datastax)
 
 ## ✅ Accomplishments that we're proud of
 
